@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     createTask("test", date.toISOString())
 }, false)
 
-const mockapiURL = "https://6788ebf22c874e66b7d6e018.mockapi.io/task1"
+const mockapiURL = "https://6788f2732c874e66b7d6fbf8.mockapi.io/task"
 function getTasks(){
     fetch(mockapiURL, {
         method: 'GET',
