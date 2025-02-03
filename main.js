@@ -41,7 +41,7 @@ function getTasks() {
 
       addEventListeners();
   }).catch(error => {
-      console.error("Ошибка при загрузке задач:", error);
+
   });
 }
 
