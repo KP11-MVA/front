@@ -11,6 +11,7 @@
     <title>TODO</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
+        
         :root {
     --color-gray:#686868;
     --color-pink: #FB6DBB;
@@ -85,7 +86,22 @@ input[type="text"], input[type="password"], textarea {
 }
     </style>
     <script src="./main.js"></script>
-    
+    <style type="text/tailwindcss">
+        .task-item {
+            @apply flex justify-between items-center my-3 px-5 py-3 text-black rounded-lg;
+            box-shadow: 0 0 0 0px transparent,
+                        inset 3px 4px 16px var(--color-light-gray);
+            transition: 0.5s ease;
+        }
+        .task-item:hover {
+            box-shadow: 3px 4px 16px var(--color-light-gray),
+                        inset 0 0 0 0;
+        }
+        .completed-task {
+            background-color: #d1fae5; 
+            border-left: 4px solid #10b981; 
+        }
+    </style>
 </head>
 <body>
     <h1 class="titleapp">TODO APP</h1>
